@@ -1,0 +1,36 @@
+name: flutter_test_roberto_complet
+description: "A new Flutter project."
+
+# Empêche la publication accidentelle du package sur pub.dev
+publish_to: 'none'
+
+# Version et numéro de build
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.11
+  shared_preferences: ^2.0.13
+  url_launcher: ^6.0.17
+  pdf: ^3.9.0
+  just_audio: ^0.9.29
+  cupertino_icons: ^1.0.8
+  video_player: ^2.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# Section spécifique pour Flutter
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/progression.mp3
+    - assets/regression.mp3
+    - assets/videos/video_roberto.mp4
